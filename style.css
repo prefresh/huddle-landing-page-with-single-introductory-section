@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans' 'Poppins';
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(./images/bg-desktop.svg);
+    /* background-size: 1300px, 1100px; */
+    /* background-position: -200% 250%, 150% -250%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: hsl(257, 40%, 49%);
+    padding: 60px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* margin-top: -180px; */
+
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.mockups {
+    width: 600px;
+    height: 400px;
+    margin-right: 100px;
+}
+
+.right {
+    display: flex;
+}
+
+.text {
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.head {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 10px;
+    width: 300px;
+    line-height: 35px;
+}
+
+.sub_head {
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+    width: 300px;
+    line-height: 20px;
+}
+
+.register {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    border: 0;
+    color: hsl(257, 40%, 49%);
+    font-size: 10px;
+}
+
+.register:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    cursor: pointer;
+}
+
+.handles {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.fa-stack {
+    color: white;
+}
+
+.fa-stack:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .background {
+        height: 100%;
+        padding: 20px;
+        overflow: auto;
+        background-image: url(./images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 450px;
+    }
+
+    .mockups {
+        width: 500px;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .head {
+        margin-left: 80px;
+    }
+
+    .sub_head {
+        margin-left: 80px;
+        font-size: 17px;
+        color: hsla(0, 0%, 100%, 0.8);
+        line-height: 23px;
+    }
+
+    .register {
+        margin-right: 130px;
+        width: 200px;
+        height: 35px;
+    }
+
+    .handles {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+        margin-right: 150px;
+    }
+
+}
